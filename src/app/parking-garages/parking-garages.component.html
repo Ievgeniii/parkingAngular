@@ -1,0 +1,16 @@
+<div class="card">
+  <h4>{{ element.properties.title }}</h4>
+  <div class="available-spaces">
+    <div class="traffic-light">
+      <div
+      class="light"
+      [ngClass]="{red: getAvailableSpaces() === 'NO DATA' || getAvailableSpaces() === 'NO FREE SPACES'}"
+      ></div>
+      <div
+      class="light"
+      [ngClass]="{green: getAvailableSpaces() !== 'NO DATA' && getAvailableSpaces() !== 'NO FREE SPACES'}"
+      ></div>
+    </div>
+    <p>Available spaces: <span>{{ getAvailableSpaces() }}</span></p>
+  </div>
+</div>

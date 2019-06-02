@@ -1,0 +1,8 @@
+<div *ngIf="show" class="details">
+  <div>
+    <p>Available spaces: <span>{{ availableSpaces }}</span></p>
+  </div>
+  <div class="frame">
+    <iframe [src]="url | safe" frameborder="0"></iframe>
+  </div>
+</div>

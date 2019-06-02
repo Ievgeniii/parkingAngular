@@ -1,0 +1,37 @@
+h4 {
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.available-spaces {
+  display: flex;
+  padding: 4px 0;
+  align-items: center;
+}
+p {
+  margin-left: 12px;
+}
+span {
+  color: #2da09a;
+  font-weight: bold;
+}
+.traffic-light {
+  background: #404040;
+  padding: 2px;
+  margin-left: 2px;
+}
+.light {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #efefef;
+  margin: 2px;
+}
+.red {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+.green {
+  background: lawngreen;
+  box-shadow: 0 0 10px lawngreen;
+}

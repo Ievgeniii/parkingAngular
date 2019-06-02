@@ -1,5 +1,14 @@
 # Parking
 
+To run this application type in the CLI next: 
+•	npm install
+•	ng serve –open or npm start
+How application works:
+•	app.component.ts is using parking.service.ts’s ajax get method and subsribes to result. On result app.component.ts creates an array of data in the parking.service.ts and binds its internal array to that data. By the length of the array app.component.ts creates DIVs and puts parking-garages.component.ts into them.
+•	parking-garages.component.ts checks the received information and outputs the result thereafter.
+•	parking-garage-details.component.ts is for outputting map after clicking on the exact parking garage. It receives necessary data by subscribing to event occurred after that clicking and sent via parking.service.ts. 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server
